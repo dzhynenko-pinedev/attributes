@@ -23,8 +23,6 @@ use Rinvex\Cacheable\CacheableEloquent;
  */
 class AttributeEntity extends Model
 {
-    use CacheableEloquent;
-
     /**
      * {@inheritdoc}
      */
