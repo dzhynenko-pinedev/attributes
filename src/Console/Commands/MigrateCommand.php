@@ -31,7 +31,7 @@ class MigrateCommand extends Command
     {
         $this->alert($this->description);
 
-        if (file_exists($path = 'database/migrations/rinvex/laravel-attributes')) {
+        if (file_exists($path = 'database/migrations/pinedev/laravel-attributes')) {
             $this->call('migrate', [
                 '--step' => true,
                 '--path' => $path,
