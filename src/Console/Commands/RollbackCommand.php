@@ -1,4 +1,4 @@
-<?php
+v<?php
 
 declare(strict_types=1);
 
@@ -31,7 +31,7 @@ class RollbackCommand extends Command
     {
         $this->alert($this->description);
 
-        if (file_exists($path = 'database/migrations/rinvex/laravel-attributes')) {
+        if (file_exists($path = 'database/migrations/pinedev/laravel-attributes')) {
             $this->call('migrate:reset', [
                 '--step' => true,
                 '--path' => $path,
